@@ -5,7 +5,7 @@
         <q-form @submit.prevent="buscar">
           <div class="row">
             <div class="col-12 col-md-10 q-pa-xs">
-              <q-input  outlined dense label="Ingrese numero de poste" v-model="codigo"/>
+              <q-input  outlined dense label="Ingrese numero de poste/ carnet" v-model="codigo"/>
             </div>
             <div class="col-12 col-md-2 q-pa-xs flex flex-center">
               <q-btn class="full-width" label="Buscar" color="primary" icon="send" type="submit" />
@@ -36,16 +36,16 @@ export default {
   data(){
     return{
       columns:[
-        {label:'nombre',field:'nombre',name:'nombre',align:'left'},
+        {label:'Denunciante',field:'nombre',name:'nombre',align:'left'},
         // {label:'ci',field:'ci',name:'ci',align:'left'},
         // {label:'telefono',field:'telefono',name:'telefono',align:'left'},
-        {label:'reclamo',field:'reclamo',name:'reclamo'},
-        {label:'estado',field:'estado',name:'estado'},
-        {label:'fecha',field:'fecha',name:'fecha'},
+        {label:'Reclamo',field:'reclamo',name:'reclamo'},
+        {label:'Estado',field:'estado',name:'estado'},
+        {label:'Fecha',field:'fecha',name:'fecha'},
         // {label:'hora',field:'hora',name:'hora'},
-        {label:'tecnico',field:'tecnico',name:'tecnico'},
-        {label:'actividad',field:'actividad',name:'actividad'},
-        {label:'fechaman',field:'fechaman',name:'fechaman'},
+        {label:'Tecnico',field:'tecnico',name:'tecnico'},
+        {label:'Activadad',field:'actividad',name:'actividad'},
+        {label:'Fecha mantenimiento',field:'fechaman',name:'fechaman'},
 
       ],
       url:process.env.API,
